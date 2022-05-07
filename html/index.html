@@ -26,23 +26,25 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <!--Linkando CSS no HTML para útilizar as propriedade a qual definir no arquivo CSS-->
+    <link rel="stylesheet" href="/css/style.css">
+
     <title>Aprenda <mark>HTML5</mark>, <mark>CSS3</mark> e <mark>JavaScript</mark> </title>
 
 </head>
 <body>
-    <!-- Cabeçalho-->
-    <header>
-        <nav>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAvaScript</li>
-                <li>Links Úteis</li>
-            </ul>
-        </nav>
+    <!-- Cabeçalho - Logo e Menu -->
+    <header class="flex-container-row menu">
+        <img src="/imagens/favicon.png" alt="Logo do site">
+        <ul class="flex-container-row">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAvaScript</a></li>
+            <li><a href="#">Links Úteis</a></li>
+        </ul>
 
     </header>
-    <!-- Menuprincipal-->
+    <!-- Menuprincipal - Destaque-->
     <main>
         <h1>Aprenda HTML5, CSS3 e JavaScript</h1>
         <h2>Escrever com semântica!</h2>
@@ -65,8 +67,19 @@
     <section>
         <img src="/imagens/CSS3.png" alt="Logo do CSS3">
 
+        <h2>CSS3</h2>
+        <h3>O CSS complementa o HTML</h3>
+        <h4>CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada para personalização visual de um site. Ou seja, elas servem para otimizar o conteúdo das páginas e permitir uma apresentação mais amigável para o usuário.</h4>
     </section>
 
+    <!--Sessão Js-->
+    <section>
+        <img src="/imagens/JS.png" alt="Logo do JavaScript">
+
+        <h2>JavaScript</h2>
+        <h3>Com a HTML e o CSS, o JavaScript é uma das três principais tecnologias da web</h3>
+        <h4>O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional).</h4>
+    </section>
 
     <!-- Sessão de Links-->
     <section> 
@@ -84,19 +97,20 @@
 
         <h3>Programação</h3>
         <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="https://git-scm.com/">Git</a></li>
+            <li><a href="https://github.com/">Github</a></li>
+            <li><a href="https://code.visualstudio.com/">VS Code</a></li>
+            <li><a href="https://nodejs.org/en/">Node.js</a></li>
         </ul>
 
 
-        <h3>Programação</h3>
+        <h3>Ajuda</h3>
         <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="https://www.w3.org/">W3C</a></li>
+            <li><a href="https://validator.w3.org/">Validador HTML </a></li>
+            <li><a href="https://jigsaw.w3.org/css-validator/">Validador CSS</a></li>
+            <li><a href="https://www.w3c.br/">W3C Brasil</a></li>
+            <li><a href="https://www.w3schools.com/">W3schools</a></li>
         </ul>
 
     </section>
