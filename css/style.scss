@@ -19,6 +19,30 @@ $gradienteCSS: linear-gradient(90deg, rgba(38, 77, 228, 0.8) 0%, rgba(41, 101, 2
 $gradienteJS: linear-gradient(90deg, rgba(229, 162, 40, 0.8) 0%, rgba(241, 191, 38, 0.8) 100%);
 $gradienteLinks: linear-gradient(90deg, #BBBBBB 0%, #DDDDDD 100%);
 
+// Vetor com vários indices com valores diferente
+$breakpoints:(
+  xs: 0,        //Smartphones em modo retrato
+  sm: 576px,    //Smartphones em modo paisagem ou Tablets em modo retrato
+  md: 768px,    //Tablets em modo paisagem
+  lg: 992px,    //Desktops
+  xl: 1200px,   //Desktops com alta definição HD e FHD
+  xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
+);
+
+
+//Declarando variáveis para atribuir valores e replicar passando como parametro, evitando que eu precise alterar em no código, mas apenas nessa variável principal e consequentemente os demais atributos que a usam.
+$corCelular: green;
+
+// Variáveis maps (vetor)
+$colorsLikert:(1: #9E2731,        
+2: #D41314,
+3: #C75413,    
+4: #F8CA2E,    
+5: #C9E165,    
+6: #7ADC54,   
+7: #027F37  
+);
+
 // 
 *{
     margin: 0;
@@ -51,6 +75,7 @@ main, section{
     height: 75vh;
     text-align: center;
     overflow: hidden;
+    border: 1px solid black;
 }
 
 //Classes
@@ -63,6 +88,47 @@ main, section{
         color: $fontDefaultColor;
         text-decoration: none;
     } 
+    ul{
+        list-style-type: none;
+    }
+    li{
+        margin: 10px;
+    }
+}
+
+.section-details{
+    width: 70vw;
+    padding: 3vw;
+}
+
+.alinhatTop{
+    align-items: flex-start;
+}
+
+.listaDeLinks{
+    width: 30vw;
+    ul{
+        list-style-type: none;
+        align-items: flex-start;
+    }
+    li{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+    }
+    a{
+        margin: 0 20px;
+        text-decoration: none;
+        color: $fontDefaultColor;
+    }
 }
 
 .botton{
@@ -74,7 +140,6 @@ main, section{
     width: 200px;
     font-weight: 900;
 }
-
 
 
 .destaqueHTML{
@@ -96,29 +161,23 @@ main, section{
     background-repeat: no-repeat; //sem repetir a imagem
 }
 
-// Vetor com vários indices com valores diferente
-$breakpoints:(
-  xs: 0,        //Smartphones em modo retrato
-  sm: 576px,    //Smartphones em modo paisagem ou Tablets em modo retrato
-  md: 768px,    //Tablets em modo paisagem
-  lg: 992px,    //Desktops
-  xl: 1200px,   //Desktops com alta definição HD e FHD
-  xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
-);
+#HTML{
+    background: $gradienteHTML;
+}
+
+#CSS{
+    background: $gradienteCSS;
+}
+
+#JavaScript{
+    background: $gradienteJS;
+}
+
+#LinksUteis{
+    background: $gradienteLinks;
+}
 
 
-//Declarando variáveis para atribuir valores e replicar passando como parametro, evitando que eu precise alterar em no código, mas apenas nessa variável principal e consequentemente os demais atributos que a usam.
-$corCelular: green;
-
-// Variáveis maps (vetor)
-$colorsLikert:(1: #9E2731,        
-2: #D41314,
-3: #C75413,    
-4: #F8CA2E,    
-5: #C9E165,    
-6: #7ADC54,   
-7: #027F37  
-);
 
 //Responsividade
 
@@ -142,17 +201,26 @@ $colorsLikert:(1: #9E2731,
 
 }
 
-//Smartphones em modo paisagem ou Tablet em modo retrato
-@media (min-width: map-get($breakpoints, sm)) and (orientation: portrait){
-    #logo{
+// Smartphones em modo paisagem
+@media (min-width: map-get($breakpoints, sm)) and (orientation: landscape) {
+
+}
+
+// Tablets em modo retrato
+@media (min-width: map-get($breakpoints, sm)) and (orientation: portrait) {
+    #logo {
         width: 200px;
         height: 200px;
     }
-    body{
-        background-color: map-get($colorsLikert, 2);
+    .menu{
+        height: 100px;
+        ul {
+            height: 100px;
+        }
     }
 }
 
+//Desktop
 
 // Tablet modo paisagem (se for tablet modo paisagem ele vai incorporar esses atributos)
 @media (min-width: map-get($breakpoints, md)){
@@ -172,10 +240,12 @@ $colorsLikert:(1: #9E2731,
         width: 260px;
         height: 260px;
     }
-    body{
-        background-color: map-get($colorsLikert, 4);
+    .menu{
+        height: 130px;
+        ul{
+            height: 130px;
+        }
     }
-
 }
 
 //Desktops com alta definição HD e FHD
@@ -197,6 +267,9 @@ $colorsLikert:(1: #9E2731,
 @media (orientation:landscape){
     #destaque {
         background-size: 110vw;
+    }
+    #inverteFlexBox{
+        flex-direction: row-reverse;
     }
 }
 

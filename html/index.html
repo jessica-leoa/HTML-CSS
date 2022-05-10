@@ -44,76 +44,88 @@
         </ul>
 
     </header>
-    <!-- Menuprincipal - Destaque-->
-    <main>
-        <h1>Aprenda HTML5, CSS3 e JavaScript</h1>
-        <h2>Escrever com semântica!</h2>
-        <h2>Aplicar estilos modernos!</h2>
-        <h2>Obter uma melhor interação!</h2>
-
-    </main>
     <!-- sessoes-->
-
+    <!-- Seção principal - destaque -->
+    <main id="Destaque" class="flex-container-column">
+        <h1>Aprenda <em class = "destaqueHTML">HTML5</em>, <em class = "destaqueCSS">CSS3</em> e <em class = "destaqueJS">JavaScript</em></h1>
+        <h2>Escrever com <em class = "destaqueHTML">semântica</em>!</h2>
+        <h2>Aplicar <em class = "destaqueCSS">estilos</em> modernos!</h2>
+        <h2>Obter uma melhor <em class = "destaqueJS">interação</em>!</h2>
+    </main>
     <!-- sessão HTML-->
-    <section>
-        <img src="/imagens/HTML5.png" alt="Logo do HTML5">
+    <section id="HTML" class="flex-container-column">
 
-        <h2>HTML5</h2>
-        <h3>A HTML é a linguagem principal da web</h3>
-        <h4>A HTML5 modifica a forma como escrevemos código e organizamos a informação na página. Seria mais semântica com menos código. Seria mais interatividade sem a necessidade de instalação de plugins e perda de performance. É a criação de código interoperável, pronto para futuros dispositivos e que facilita a reutilização da informação de diversas formas.</h4>
+        <div class="flex-container-row">
+            <img src="/imagens/HTML5.png" alt="Logo do HTML5">
+        </div>
+
+        <div class="flex-container-column section-details">
+            <h2>HTML5</h2>
+            <h3>A HTML é a linguagem principal da web</h3>
+            <p>A HTML5 modifica a forma como escrevemos código e organizamos a informação na página. Seria mais semântica com menos código. Seria mais interatividade sem a necessidade de instalação de plugins e perda de performance. É a criação de código interoperável, pronto para futuros dispositivos e que facilita a reutilização da informação de diversas formas.</p>
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="botao">Saiba mais</a>
+        </div>
+
     </section>
 
     <!-- sessão CSS3-->
-    <section>
-        <img src="/imagens/CSS3.png" alt="Logo do CSS3">
+    <section id="CSS" class="flex-container-column">
 
-        <h2>CSS3</h2>
-        <h3>O CSS complementa o HTML</h3>
-        <h4>CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada para personalização visual de um site. Ou seja, elas servem para otimizar o conteúdo das páginas e permitir uma apresentação mais amigável para o usuário.</h4>
+        <div class="flex-container-row" id="inverteFlexBox">
+            <img src="/imagens/CSS3.png" alt="Logo do CSS3">
+        </div>
+
+        <div class="flex-container-column section-details">
+            <h2>CSS3</h2>
+            <h3>O CSS complementa o HTML</h3>
+            <p>CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada para personalização visual de um site. Ou seja, elas servem para otimizar o conteúdo das páginas e permitir uma apresentação mais amigável para o usuário.</p>
+            
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="botao">Saiba mais</a>
+        </div>
     </section>
 
     <!--Sessão Js-->
-    <section>
-        <img src="/imagens/JS.png" alt="Logo do JavaScript">
+    <section id="JavaScript" class="flex-container-column">
 
-        <h2>JavaScript</h2>
-        <h3>Com a HTML e o CSS, o JavaScript é uma das três principais tecnologias da web</h3>
-        <h4>O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional).</h4>
+        <div flex-container-row>
+            <img src="/imagens/JS.png" alt="Logo do JavaScript">
+        </div>
+
+        <div class="flex-container-column section-details">
+            <h2>JavaScript</h2>
+            <h3>Com a HTML e o CSS, o JavaScript é uma das três principais tecnologias da web</h3>
+            <p>O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional).</p>
+        </div>
+        
     </section>
 
     <!-- Sessão de Links-->
-    <section> 
-        <h2>Links Úteis</h2>
-
-        <h3>Planejamento</h3>
+   
+    <!-- Rodapé - Autor e contatos -->
+    <footer>
+        <p>© 2022 - Jobson Tenório do Nascimento</p>
         <ul>
-            <!-- Adicionando links-->
-            <li><a href="https://www.figma.com/">Figma</a></li>
-            <li><a href="https://fonts.google.com/">Google Fonts</a></li>
-            <li><a href="https://home.unicode.org/">unicode.org</a></li>
-            <li><a href="https://realfavicongenerator.net/">Favicon Generator</a></li>
-            <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+            <li>
+                <a href="whatsapp:contact=+5581991567056@s.whatsapp.com&message" target="_blank" rel="nofollow">
+                <img src="img/WhatsApp_icon.png" alt="Logo do WhatsApp"></a>
+            </li>
+            <li>
+                <a href="mailto:jobsontenorio@gmail.com//" target="_blank" rel="nofollow">
+                <img src="img/Gmail_icon.png" alt=""></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCe4_fd7PQj2lWTdKxFZ8kbQ" target="_blank" rel="nofollow">
+                <img src="img/YouTube_icon.png" alt=""></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/jobson.tenorio.7/" target="_blank" rel="nofollow">
+                <img src="img/Facebook_icon.png" alt=""></a>
+             </li>
+            <li>
+                <a href="https://www.instagram.com/jobsontenorio/" target="_blank" rel="nofollow">
+                <img src="img/Instagram_icon.png" alt=""></a>
+            </li>
         </ul>
-
-        <h3>Programação</h3>
-        <ul>
-            <li><a href="https://git-scm.com/">Git</a></li>
-            <li><a href="https://github.com/">Github</a></li>
-            <li><a href="https://code.visualstudio.com/">VS Code</a></li>
-            <li><a href="https://nodejs.org/en/">Node.js</a></li>
-        </ul>
-
-
-        <h3>Ajuda</h3>
-        <ul>
-            <li><a href="https://www.w3.org/">W3C</a></li>
-            <li><a href="https://validator.w3.org/">Validador HTML </a></li>
-            <li><a href="https://jigsaw.w3.org/css-validator/">Validador CSS</a></li>
-            <li><a href="https://www.w3c.br/">W3C Brasil</a></li>
-            <li><a href="https://www.w3schools.com/">W3schools</a></li>
-        </ul>
-
-    </section>
-
+    </footer>
 </body>
 </html>
