@@ -153,7 +153,7 @@ main, section {
 }
 
 #destaque {
-  background: url(/imagens/Facebook_icon.png);
+  background-image: url("/imagens/Destaque_o20.png");
   background-position: center;
   background-repeat: no-repeat;
 }
