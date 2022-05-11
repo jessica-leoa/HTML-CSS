@@ -10,7 +10,7 @@
   margin-bottom: 0,8rem;
 }
 
-.flex-contrainer-row {
+.flex-container-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +28,7 @@
           align-items: center;
 }
 
-.flex-contrainer-colimn {
+.flex-container-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,7 +65,7 @@ main, section {
 }
 
 .menu a {
-  color: #000000;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -82,14 +82,23 @@ main, section {
   padding: 3vw;
 }
 
-.alinhatTop {
+.alinharTop {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
 .listaDeLinks {
-  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .listaDeLinks ul {
@@ -97,6 +106,7 @@ main, section {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  border: 1px solid black;
 }
 
 .listaDeLinks li {
@@ -121,13 +131,27 @@ main, section {
 .listaDeLinks img {
   width: 50px;
   height: 50px;
-  border: 1px solid black;
 }
 
 .listaDeLinks a {
   margin: 0 20px;
   text-decoration: none;
   color: #000000;
+  font-weight: bold;
+}
+
+.teste {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100vw;
 }
 
 .botton {
@@ -176,6 +200,26 @@ main, section {
 #LinksUteis {
   background: -webkit-gradient(linear, left top, right top, from(#BBBBBB), to(#DDDDDD));
   background: linear-gradient(90deg, #BBBBBB 0%, #DDDDDD 100%);
+}
+
+#LinksUteis h2 {
+  margin-bottom: 25px;
+}
+
+#Rodape {
+  background: #000000;
+  color: #FFFFFF;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Rodape ul {
+  list-style-type: none;
+}
+
+#Rodape li {
+  padding: 10px 10px;
 }
 
 @media (min-width: 0) and (orientation: landscape) {

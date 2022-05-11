@@ -54,7 +54,7 @@ $colorsLikert:(1: #9E2731,
     }
 }
 //Flex container linha
-.flex-contrainer-row{
+.flex-container-row{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -63,7 +63,7 @@ $colorsLikert:(1: #9E2731,
 }
 
 //Flex container Coluna
-.flex-contrainer-colimn{
+.flex-container-column{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -85,7 +85,7 @@ main, section{
     color: $backgroundDefaultColor; //cor dos nomes que ficará no menu
     align-items: flex-start;
     a {
-        color: $fontDefaultColor;
+        color: $fontSecondaryColor;
         text-decoration: none;
     } 
     ul{
@@ -101,15 +101,18 @@ main, section{
     padding: 3vw;
 }
 
-.alinhatTop{
+.alinharTop{
     align-items: flex-start;
 }
 
 .listaDeLinks{
-    width: 30vw;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
     ul{
         list-style-type: none;
         align-items: flex-start;
+        border: 1px solid black;
     }
     li{
         display: flex;
@@ -122,14 +125,24 @@ main, section{
     img{
         width: 50px;
         height: 50px;
-        border: 1px solid black;
+        //border: 1px solid black;
     }
     a{
         margin: 0 20px;
         text-decoration: none;
         color: $fontDefaultColor;
+        font-weight: bold;
     }
+
 }
+
+.teste{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100vw;
+}
+
 
 .botton{
     background-color: $backgroundSecondaryColor ;
@@ -175,6 +188,28 @@ main, section{
 
 #LinksUteis{
     background: $gradienteLinks;
+
+    h2{
+        margin-bottom: 25px;
+    }
+}
+
+
+#Rodape{
+
+    background: $backgroundSecondaryColor;
+    color: $backgroundDefaultColor;
+    justify-content: space-between;
+
+
+    ul{
+        list-style-type: none;
+    }
+    li{
+        padding: 10px 10px;
+    
+    }
+
 }
 
 
