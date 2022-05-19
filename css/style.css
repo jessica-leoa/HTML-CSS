@@ -106,7 +106,6 @@ main, section {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  border: 1px solid black;
 }
 
 .listaDeLinks li {
